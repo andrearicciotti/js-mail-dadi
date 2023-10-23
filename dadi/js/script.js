@@ -5,18 +5,65 @@ rolldice.addEventListener("click", function () {
 
     const randomNrUser = Math.floor(Math.random() * (7 - 1) + 1);
     const randomNrCom = Math.floor(Math.random() * (7 - 1) + 1);
-    console.log(randomNrUser, randomNrCom);
+    // console.log(randomNrUser, randomNrCom);
 
+    let result
+    const rowElem = document.querySelector(".row");
+
+    const showNumber = document.createElement("div");
+    showNumber.classList.add("col-12");
+    showNumber.innerHTML = `Il banco ha fatto ${randomNrCom} e il giocatore ha fatto ${randomNrUser}`;
+
+    rowElem.append(showNumber);
+
+
+    // OUTPUT MESSAGGIO
     if (randomNrUser === randomNrCom) {
 
-        console.log("E' un pareggio!");
+        result = "E' un pareggio!";
+
+        const tieMsg = document.createElement("div");
+        tieMsg.classList.add("col-12");
+        tieMsg.innerHTML = result;
+        // console.log(tieMsg);
+
+        rowElem.append(tieMsg);
+
+        setTimeout(function() {
+            location.reload();
+        }, 2500);
 
     } else if (randomNrUser > randomNrCom) {
 
-        console.log("Hai vinto!");
+        result = "Hai vinto!";
+
+        const winMsg = document.createElement("div");
+        winMsg.classList.add("col-12");
+        winMsg.innerHTML = result;
+        // console.log(winMsg);
+
+        rowElem.append(winMsg);
+
+        setTimeout(function() {
+            location.reload();
+        }, 2500);
+
     } else {
 
-        console.log("Hai perso!");
+        result = "Hai perso!";
+
+        const loseMsg = document.createElement("div");
+        loseMsg.classList.add("col-12");
+        loseMsg.innerHTML = result;
+        // console.log(loseMsg);
+
+        rowElem.append(loseMsg);
+
+        setTimeout(function() {
+            location.reload();
+        }, 1500);
+
     }
+    
 })
 
