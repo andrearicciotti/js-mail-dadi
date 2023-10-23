@@ -24,6 +24,47 @@ img {
 
 
 /* MAIN */
+.ms_dice-1 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-1.jpg);
+    background-size: cover; 
+}
+
+.ms_dice-2 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-2.jpg);
+    background-size: cover;
+}
+
+.ms_dice-3 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-3.jpg);
+    background-size: cover;
+}
+
+.ms_dice-4 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-4.jpg);
+    background-size: cover;
+}
+
+.ms_dice-5 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-5.jpg);
+    background-size: cover;
+}
+
+.ms_dice-6 {
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/dice-6.jpg);
+    background-size: cover;
+}
 
 
 /* FOOTER */

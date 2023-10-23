@@ -36,4 +36,11 @@ Dopo l' invio dei dati tramite click sul bottone del nostro utente:
 
 - Stampiamo un messaggio contenente l' esito del controllo.
 
+---
+
+## Anteprima 
+
+![anteprima](img/preview.png)
+
+---
 

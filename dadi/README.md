@@ -27,3 +27,11 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 - Stampiamo un messaggio nel documento contenente l' esito del gioco.
 
+---
+
+## Anteprima
+
+![anteprima](img/preview.png)
+
+---
+

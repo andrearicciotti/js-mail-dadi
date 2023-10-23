@@ -30,10 +30,10 @@ sendBtn.addEventListener("click", function () {
         const successMsg = document.createElement("div");
         successMsg.classList.add("col-12");
         successMsg.innerHTML = logOk;
-        console.log(successMsg);
+        // console.log(successMsg);
 
         rowElem.append(successMsg);
-        console.log(rowElem);
+        // console.log(rowElem);
 
         setTimeout(function() {
             location.reload();
@@ -47,10 +47,10 @@ sendBtn.addEventListener("click", function () {
         const failMsg = document.createElement("div");
         failMsg.classList.add("col-12");
         failMsg.innerHTML = logFail;
-        console.log(failMsg);
+        // console.log(failMsg);
 
         rowElem.append(failMsg);
-        console.log(rowElem);
+        // console.log(rowElem);
 
         setTimeout(function() {
             location.reload();

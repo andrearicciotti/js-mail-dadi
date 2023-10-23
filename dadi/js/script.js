@@ -8,14 +8,19 @@ rolldice.addEventListener("click", function () {
     // console.log(randomNrUser, randomNrCom);
 
     let result
+
     const rowElem = document.querySelector(".row");
 
-    const showNumber = document.createElement("div");
-    showNumber.classList.add("col-12");
-    showNumber.innerHTML = `Il banco ha fatto ${randomNrCom} e il giocatore ha fatto ${randomNrUser}`;
+    const userNumber = document.createElement("div");
+    userNumber.classList.add("col-3","my-2");
+    userNumber.classList.add(`ms_dice-${randomNrUser}`);
+    rowElem.append(userNumber);
 
-    rowElem.append(showNumber);
-
+    const comNumber = document.createElement("div");
+    comNumber.classList.add("col-3","my-2");
+    comNumber.classList.add(`ms_dice-${randomNrCom}`);
+    rowElem.append(comNumber);
+    
 
     // OUTPUT MESSAGGIO
     if (randomNrUser === randomNrCom) {
