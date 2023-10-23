@@ -3,7 +3,7 @@ const mailChecked = ["pippo@gmail.com", "pluto@gmail.com", "paperino@gmail.com"]
 
 const sendBtn = document.getElementById("login-btn");
 
-sendBtn.addEventListener("click", function (event) {
+sendBtn.addEventListener("click", function () {
     const userMail = document.getElementById("mail").value;
     // console.log(userMail);
 
@@ -20,16 +20,44 @@ sendBtn.addEventListener("click", function (event) {
                 
     }
 
+  
+    // OUTPUT MESSAGGIO
     if (access) {
         const logOk = "Login effettuato con successo";
-        const rowElem = document.querySelector(".row").innerHTML;
-        // console.log(rowElem);
+        const rowElem = document.getElementById("row");
+        
 
-        logElem.classList.add("col-12");
+        const successMsg = document.createElement("div");
+        successMsg.classList.add("col-12");
+        successMsg.innerHTML = logOk;
+        console.log(successMsg);
+
+        rowElem.append(successMsg);
+        console.log(rowElem);
+
+        setTimeout(function() {
+            location.reload();
+        }, 1500);
+
     } else {
-        console.warn("Accesso negato!");
+        logFail = "Login fallito"
+        const rowElem = document.getElementById("row");
+        
+
+        const failMsg = document.createElement("div");
+        failMsg.classList.add("col-12");
+        failMsg.innerHTML = logFail;
+        console.log(failMsg);
+
+        rowElem.append(failMsg);
+        console.log(rowElem);
+
+        setTimeout(function() {
+            location.reload();
+        }, 1500);
     }
 
+    
 })
 
 
