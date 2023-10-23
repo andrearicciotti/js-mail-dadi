@@ -24,6 +24,8 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 **2. Logica del programma**
 
+Dopo l' invio dei dati tramite click sul bottone del nostro utente:
+
 - Confontiamo i valori inseriti dall' utente con quelli in nostro possesso.
 
 - Effettuiamo controlli sulla corretezza dei valori inseriti
